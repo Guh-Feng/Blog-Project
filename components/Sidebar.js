@@ -1,5 +1,6 @@
+import ButtonsContainer from './Buttons/ButtonsContainer'
 import styles from './Sidebar.module.css'
-import { useState } from 'react';
+import { useState } from 'react'
 
 export default function Sidebar() {
     const [hovering, setHovering] = useState(false);
@@ -12,7 +13,7 @@ export default function Sidebar() {
     
     return (
         <div onMouseOver={setHoveringTrue} onMouseOut={setHoveringFalse} className={`${styles.sidebar} ${hovering ? styles.shown : styles.hidden}`} >
-            Sample text.
+            <ButtonsContainer />
         </div>
     )
 }
