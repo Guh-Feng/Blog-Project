@@ -4,7 +4,8 @@ import Footer from '@components/Footer'
 import Sidebar from '@components/Sidebar'
 
 export default function Home() {
-  return (
+  
+  return ( //Remember that this open parenthesis has to be on the same line on the return because front-end I guess
     <div className="container">
       <Head>
         <title>Guh's Blog</title>
@@ -13,9 +14,7 @@ export default function Home() {
       
       <main>
         <Sidebar />
-        <p className="description">
-          My work in progress blog. Currently working on: sidebar
-        </p>
+        <p>My work in progress blog. Currently working on: working buttons.</p>
       </main>
     </div>
   )
