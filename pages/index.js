@@ -13,8 +13,7 @@ export default function Home() {
       </Head>
       
       <main>
-        <Sidebar />
-        <p>My work in progress blog. Currently working on: working buttons.</p>
+        <p>My work in progress blog. Currently working on: a persistent sidebar.</p>
       </main>
     </div>
   )

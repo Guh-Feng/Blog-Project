@@ -4,7 +4,6 @@ import styles from "./the_fields_of_computer_science.module.css"
 export default function the_fields_of_computer_science () { 
     return (
         <div className={styles.pageContainer}>
-            <Sidebar />
             <p>
             It's my very first blog! I'm looking forward to writing about all kinds of things in the forseeable future, 
             and eventually forget about this little project when life inevitably gets in the way. Or we go down 

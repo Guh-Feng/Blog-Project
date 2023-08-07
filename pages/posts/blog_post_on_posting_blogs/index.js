@@ -4,7 +4,6 @@ import styles from "./blog_post_on_posting_blogs.module.css"
 export default function blog_post_on_posting_blogs() { 
     return (
         <div className={styles.pageContainer}>
-            <Sidebar />
             <p>
             It's my very first blog! I'm looking forward to writing about all kinds of things in the forseeable future, 
             and eventually forget about this little project when life inevitably gets in the way. Or we go down 
