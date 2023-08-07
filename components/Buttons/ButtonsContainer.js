@@ -8,8 +8,8 @@ export default function ButtonsContainer(){
         <>
             <Content />
             <div className={styles.buttonscontainer}>
-                <Link href="/posts/blog_post_on_posting_blogs"><Button title='Blog on Blogs'/></Link>
-                <Link href="/posts/the_fields_of_computer_science"><Button title='Thoughts About Computer Science'/></Link>
+                <Button title='Blog on Blogs' link='/posts/blog_post_on_posting_blogs' />
+                <Button title='Thoughts About Computer Science' link='/posts/the_fields_of_computer_science' />
             </div>
         </>
     )
