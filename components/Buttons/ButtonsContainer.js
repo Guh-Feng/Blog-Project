@@ -1,7 +1,6 @@
 import Button from './Button'
 import Content from './Content'
 import styles from './ButtonsContainer.module.css'
-import Link from 'next/link'
 
 export default function ButtonsContainer(){
     return(

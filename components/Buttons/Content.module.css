@@ -4,11 +4,19 @@
     margin-left: 20px;
     margin-right: 20px;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .line{
-    border: 1px solid #055983;
+    border-top: 1px solid #055983;
     border-radius: 10px;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.content:visited{
+    text-decoration: none;
+    color: #055983;
 }

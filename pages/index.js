@@ -1,7 +1,15 @@
 import Head from 'next/head'
+import styles from './homepage.module.css'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Sidebar from '@components/Sidebar'
+import BrowsePostsButton from '@components/Buttons/BrowsePostsButton'
+import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+})
 
 export default function Home() {
   
@@ -13,7 +21,14 @@ export default function Home() {
       </Head>
       
       <main>
-        <p>My work in progress blog. Currently working on: a persistent sidebar.</p>
+        <div className={styles.titleContainer}>
+          <div className={`${styles.myName} ${roboto.className}`}>GUH FENG</div>
+          <div className={styles.blueBar}></div>
+          <div className={`${styles.subtitle} ${roboto.className}`}>Just Another Blog Project</div>
+          <hr className={styles.lineLeft}></hr>
+          <hr className={styles.lineRight}></hr>
+          <BrowsePostsButton title='Browse Posts' />
+        </div>
       </main>
     </div>
   )

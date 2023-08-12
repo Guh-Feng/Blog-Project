@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 export default function Content(){
     return(
-        <Link href="/">
-        <div className={styles.content}>
-            Contents
-            {/*<hr className={styles.line}></hr>*/}
-        </div>
-        </Link>
+        <>
+            <Link href="/" className={styles.content}>
+                Guh's Blogs
+            </Link>
+            <hr className={styles.line}></hr>
+        </>
     )
 }

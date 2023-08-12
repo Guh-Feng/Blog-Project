@@ -1,6 +1,6 @@
 .button {
-    background-color: #fa8072;
-    color: #ffffff;
+    background-color: #f6f6f6;
+    color: #055983;
 
     display: inline-block;
     border: none;
@@ -8,10 +8,16 @@
     text-align: center;
     text-decoration: none;
 
-    padding: 10px;
-    margin: 4px 2px;
-    border-radius: 12px;
-    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0px 2px;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 200px;
+}
 
-    border: 2px solid #055983;
+.button:hover{
+    background-color: #055983;
+    transition: 0.7s;
+    color: white;
 }
