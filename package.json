@@ -8,8 +8,9 @@
     "export": "next export"
   },
   "dependencies": {
+    "@next/font": "^13.4.13",
     "cypress": "^10.0.3",
-    "next": "^12.1.5",
+    "next": "^13.4.12",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
