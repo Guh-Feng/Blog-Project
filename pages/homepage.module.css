@@ -2,9 +2,10 @@
     display: flex;
     position: absolute;
     width: 707px;
-    height: 650px;
+    height: 500px;
     justify-content: center;
     align-items: center;
+    bottom: 120px;
 }
 
 .myName{
@@ -17,7 +18,7 @@
     color: #545454;
     top: 200px;
 
-    width: 1000px;
+    width: 600px;
 }
 
 .blueBar{
@@ -26,7 +27,7 @@
     width: 580px;
     height: 52px;
     position: absolute;
-    top: 230px;
+    top: 235px;
     justify-self: center;
     opacity: 0.7;
     border-radius: 40px;

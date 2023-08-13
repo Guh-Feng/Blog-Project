@@ -1,0 +1,40 @@
+.postsList{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 400px;
+}
+
+.sideline{
+    border: 1px solid #545454;
+    height: 100.3%;
+    position: absolute;
+    left: 390px;
+    top: -10px;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.year{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.month{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.postlinks{
+    color: #055983;
+    text-decoration: none;
+}
+
+.postLinks:visited{
+    color: #055983;
+    text-decoration: none;
+}
+

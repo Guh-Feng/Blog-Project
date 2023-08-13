@@ -5,7 +5,7 @@ export default function Content(){
     return(
         <>
             <Link href="/" className={styles.content}>
-                Guh's Blogs
+                GUH FENG
             </Link>
             <hr className={styles.line}></hr>
         </>
