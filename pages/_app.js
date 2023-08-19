@@ -1,11 +1,14 @@
 import '@styles/globals.css'
 import Layout from '@components/Layout'
+import Context from '@components/Context'
 
 function Application({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Context>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Context>
   ) 
 }
 

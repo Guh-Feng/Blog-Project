@@ -1,4 +1,4 @@
-import ButtonsContainer from './Buttons/ButtonsContainer'
+import ButtonsContainer from './SidebarComponents/ButtonsContainer'
 import styles from './Sidebar.module.css'
 import { useState } from 'react'
 

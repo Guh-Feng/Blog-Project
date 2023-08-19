@@ -21,3 +21,9 @@
     transition: 0.7s;
     color: white;
 }
+
+.selected{
+    background-color: #545454;
+    transition: 0.7s;
+    color: white;
+}

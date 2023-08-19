@@ -3,8 +3,9 @@ import styles from './homepage.module.css'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Sidebar from '@components/Sidebar'
-import BrowsePostsButton from '@components/Buttons/BrowsePostsButton'
+import BrowsePostsButton from '@components/SidebarComponents/BrowsePostsButton'
 import { Roboto } from 'next/font/google'
+import { DarkModeContextReturn } from '@components/Context'
  
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -12,7 +13,11 @@ const roboto = Roboto({
 })
 
 export default function Home() {
-  
+  let darkMode = DarkModeContextReturn();
+  if(darkMode)
+    console.log('True');
+  else
+    console.log('False');
   return ( //Remember that this open parenthesis has to be on the same line on the return because front-end I guess
     <div className="container">
       <Head>
