@@ -1,9 +1,16 @@
 import Sidebar from "@components/Sidebar"
 import styles from "./blog_post_on_posting_blogs.module.css"
+import { DarkModeContextReturn } from '@components/Context'
 
 export default function blog_post_on_posting_blogs() { 
+    let {darkMode, changeDarkMode} = DarkModeContextReturn();
     return (
         <div className={styles.pageContainer}>
+            <style jsx global>{`
+                body {
+                ${darkMode ? 'background: #434343' : 'background: #f6f6f6;'}
+                }
+            `}</style>
             <p>
             It's my very first blog! I'm looking forward to writing about all kinds of things in the forseeable future, 
             and eventually forget about this little project when life inevitably gets in the way. Or we go down 

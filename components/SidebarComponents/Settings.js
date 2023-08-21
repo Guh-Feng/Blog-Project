@@ -4,10 +4,7 @@ import { DarkModeContextReturn } from '@components/Context';
 
 export default function Settings(){
     let {darkMode, changeDarkMode} = DarkModeContextReturn();
-    if(darkMode)
-        console.log('True');
-    else
-        console.log('False');
+    
     return(
         <div className={styles.settingsContainer}>
             <hr className={styles.line}></hr>

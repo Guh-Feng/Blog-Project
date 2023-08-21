@@ -4,7 +4,7 @@ const DarkModeContext = createContext();
 
 export default function Context({children})
 {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
     function changeDarkMode(){
         setDarkMode(!darkMode);
     }

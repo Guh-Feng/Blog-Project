@@ -1,18 +1,26 @@
-.monthYear{
+.monthYearContainer{
     display: flex;
     justify-content: center;
 }
 
-.month{
+.monthYear{
     margin: 0px 5px;
     font-size: 25px;
     font-weight: bold;
+}
+
+.monthColor{
     color: #545454;
 }
 
-.year{
-    margin: 0px 5px;
-    font-size: 25px;
-    font-weight: bold;
+.monthColorDarkMode{
+    color: #f6f6f6;
+}
+
+.yearColor{
     color: #545454;
+}
+
+.yearColorDarkMode{
+    color: #f6f6f6;
 }

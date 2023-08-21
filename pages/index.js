@@ -3,7 +3,7 @@ import styles from './homepage.module.css'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Sidebar from '@components/Sidebar'
-import BrowsePostsButton from '@components/SidebarComponents/BrowsePostsButton'
+import BrowsePostsButton from '@components/HomePageComponents/BrowsePostsButton'
 import { Roboto } from 'next/font/google'
 import { DarkModeContextReturn } from '@components/Context'
  
@@ -13,13 +13,15 @@ const roboto = Roboto({
 })
 
 export default function Home() {
-  let darkMode = DarkModeContextReturn();
-  if(darkMode)
-    console.log('True');
-  else
-    console.log('False');
+  let {darkMode, changeDarkMode} = DarkModeContextReturn();
+
   return ( //Remember that this open parenthesis has to be on the same line on the return because front-end I guess
-    <div className="container">
+    <div className={styles.container}>
+      <style jsx global>{`
+      body {
+        ${darkMode ? 'background: #434343' : 'background: #f6f6f6;'}
+      }
+    `}</style>
       <Head>
         <title>Guh's Blog</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,11 +29,11 @@ export default function Home() {
       
       <main>
         <div className={styles.titleContainer}>
-          <div className={`${styles.myName} ${roboto.className}`}>GUH FENG</div>
-          <div className={styles.blueBar}></div>
-          <div className={`${styles.subtitle} ${roboto.className}`}>Just Another Blog Project</div>
-          <hr className={styles.lineLeft}></hr>
-          <hr className={styles.lineRight}></hr>
+          <div className={`${darkMode ? styles.myNameDarkMode : styles.myName} ${roboto.className}`}>GUH FENG</div>
+          <div className={`${darkMode ? styles.blueBarDarkMode : styles.blueBar}`}></div>
+          <div className={`${darkMode ? styles.subtitleDarkMode : styles.subtitle} ${roboto.className}`}>Just Another Blog Project</div>
+          <hr className={`${darkMode ? styles.lineLeftDarkMode : styles.lineLeft}`}></hr>
+          <hr className={`${darkMode ? styles.lineRightDarkMode : styles.lineRight}`}></hr>
           <BrowsePostsButton title='Browse Posts' />
         </div>
       </main>

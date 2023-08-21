@@ -1,7 +1,4 @@
 .browsePostsButton{
-    background-color: #055983;
-    color: #FFFFFF;
-
     display: inline-block;
     border: none;
     cursor: pointer;
@@ -18,4 +15,14 @@
     width: 160px;
     top: 355px;
     left: 275px;
+}
+
+.browsePostsButtonColor{
+    background-color: #005885;
+    color: #FFFFFF;
+}
+
+.browsePostsButtonColorDarkMode{
+    background-color: #FFFFFF;
+    color: #005885;
 }

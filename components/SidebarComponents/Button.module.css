@@ -1,7 +1,4 @@
 .button {
-    background-color: #f6f6f6;
-    color: #055983;
-
     display: inline-block;
     border: none;
     cursor: pointer;
@@ -16,14 +13,36 @@
     width: 200px;
 }
 
-.button:hover{
-    background-color: #055983;
+.buttonColor{
+    background-color: #f6f6f6;
+    color: #005885;
+}
+
+.buttonColor:hover{
+    background-color: #005885;
     transition: 0.7s;
-    color: white;
+    color: #f6f6f6;
+}
+
+.buttonColorDarkMode{
+    background-color: #434343;
+    color: #cfe2f3
+}
+
+.buttonColorDarkMode:hover{
+    background-color: #005885;
+    transition: 0.7s;
+    color: #f6f6f6;
 }
 
 .selected{
-    background-color: #545454;
+    background-color: #434343;
     transition: 0.7s;
-    color: white;
+    color: #f6f6f6;
+}
+
+.selectedDarkMode{
+    background-color: #f6f6f6;
+    transition: 0.7s;
+    color: #434343;
 }

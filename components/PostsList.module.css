@@ -13,22 +13,35 @@
     top: -10px;
 }
 
+.sidelineDarkMode{
+    border: 1px solid #f6f6f6;
+    height: 100.3%;
+    position: absolute;
+    left: 390px;
+    top: -10px;
+}
+
 .title{
     font-size: 50px;
     font-weight: bold;
-    color: #545454;
 }
 
 .year{
     font-size: 30px;
     font-weight: bold;
-    color: #545454
 }
 
 .month{
     font-size: 20px;
     font-weight: bold;
-    color: #545454;
+}
+
+.normalTextColor{
+    color: #434343;
+}
+
+.normalTextColorDarkMode{
+    color: #f6f6f6;
 }
 
 .postlinks{
@@ -41,3 +54,12 @@
     text-decoration: none;
 }
 
+.postlinksDarkMode{
+    color: #cfe2f3;
+    text-decoration: none;
+}
+
+.postLinksDarkMode:visited{
+    color: #cfe2f3;
+    text-decoration: none;
+}
